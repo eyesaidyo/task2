@@ -2,37 +2,194 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#profile__img {
+  width: 5rem;
+  border-radius: 50px;
+  margin-top: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#slack {
+  display: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#twitter {
+  color: rgb(0, 217, 255);
+}
+.card {
+  width: 80%;
+  background: #eaecf0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 38px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  /* padding: 10px; */
+}
+.cards-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+.zuri {
+  width: 10%;
+}
+.i4g {
+  width: 10%;
+}
+.svg {
+  padding: 10px;
+}
+.ft {
+  width: 5rem;
+  /* position: relative; */
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: rgb(0, 217, 255);
+}
+p {
+  font-weight: 6rem;
+}
+footer {
+  /* border: 1px solid; */
+  padding-top: 8%;
+  margin-bottom: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  gap: 30%;
+  margin-left: 10%;
+  margin-right: 10%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#ft-text {
+  color: #667085;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+@media (max-width: 760px) {
+  #ft-text {
+    font-size: 0.5rem;
+  }
+}
+.input-lbl {
+  display: block;
+  text-align: left;
+  color: #344054;
+  margin: 10px 0;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contact-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* border: 2px solid red;   */
+  padding: 10px 35%;
+  color: #344054;
+}
+#last_name {
+  display: inline;
+  width: 99%;
+  padding: 15px 2px;
+  margin-right: auto;
+  border-radius: 7px;
+  border: 1px solid #d0d5dd;
+}
+#first_name {
+  display: inline;
+  width: 99%;
+  margin-left: 0;
+  margin-right: 12px;
+  padding: 15px 2px;
+  border-radius: 7px;
+  border: 1px solid #d0d5dd;
+}
+#btn__submit {
+  background: #1570ef;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border: 1px solid #1570ef;
+  border-radius: 8px;
+  padding: 15px;
+  color: #ffff;
+  margin: 10px 0;
+}
+#btn__submit:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+.names {
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+#email {
+  width: 99%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #d0d5dd;
+  max-width: 10px 0;
+}
+.lbl {
+  display: block;
+  text-align: left;
+  color: #344054;
+  margin: 10px 0;
+  font-weight: 500;
+}
+.name-item {
+  width: 49.3%;
+
+  /* border: 3px solid yellow; */
+}
+.checkbox {
+  text-align: left;
+  margin: 10px 0;
+  /* border: 4px solid pink; */
+}
+#agree {
+  margin-left: 0;
+  margin-right: 10px;
+}
+@media (max-width: 760px) {
+  .name-item {
+    width: 99%;
   }
-  to {
-    transform: rotate(360deg);
+  .names {
+    display: flex;
+    flex-direction: column;
   }
+  #email {
+    width: 98%;
+  }
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid red;   */
+    padding: 10px 25%;
+    color: #344054;
+  }
+}
+#message {
+  width: 99%;
+  padding: 10px 2px;
+  border-radius: 8px;
+  margin: 10px 0;
+  border: 1px solid #d0d5dd;
+  text-decoration: none;
+}
+#message::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form-text {
+  text-align: left;
+}
+h2 {
+  color: #101828;
+
+  font-style: normal;
 }
